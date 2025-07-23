@@ -8,8 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    hello world
+<body class="mx-auto max-h-[71px] max-w-[1140px]">
+    <nav class="h-[71px] w-full xl:p-0 px-3 flex justify-between items-center mt-8">
+        <img class="h-full" src="/assets//logo.png" alt="logo">
+        <div class="flex items-center justify-between md:w-[415px] h-full">
+            <a class="font-bold hidden md:block" href="#">Home</a><a class="text-[#8987A1] hidden md:block"
+                href="#">Shop</a><a class="text-[#8987A1] hidden md:block" href="#">About Us</a>
+            <button class="cursor-pointer flex gap-1 items-center">
+                <img class="h-8 md:h-6" src="/assets//cart-shopping-svgrepo-com.svg" alt="cart logo">
+                <p class="text-xl">Cart ($56)</p>
+
+            </button>
+        </div>
+    </nav>
+
 </body>
 
 </html>
