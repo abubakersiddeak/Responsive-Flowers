@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flowers</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .noto-serif {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+
+            font-style: normal;
+
+        }
+    </style>
 </head>
 
 <body class="mx-auto max-h-[71px] max-w-[1140px]">
@@ -20,7 +34,7 @@
                 Us</a>
             <button class="cursor-pointer flex gap-1 items-center">
                 <img class="h-8 md:h-6 hover:scale-110 duration-1000 hover:text-gray-800"
-                    src="/assets/cart-shopping-svgrepo-com.svg" alt="cart logo">
+                    src="assets/cart-shopping-svgrepo-com.svg" alt="cart logo">
                 <p class="text-xl hover:scale-110 duration-1000 hover:text-gray-800">Cart ($56)</p>
 
             </button>
@@ -28,11 +42,20 @@
     </nav>
     <!-- nav section End -->
     <!-- Hero section Start -->
-    <section class="mt-[120px] border w-full h-[461px] grid grid-cols-2 ">
-        <div class="border relative">
-
+    <section class="mt-[120px]  w-full h-[800px] md:h-[461px] grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
+        <div class=" relative flex gap-4 flex-col md:justify-end order-2 md:order-1">
+            <div class="noto-serif mt-15 md:mt-0 text-4xl md:text-5xl xl:text-7xl md:leading-18 xl:leading-25">
+                <span>ALWAYS</span><span class="text-[#E95A08]"> FRESH <br>FLOWERS</span>
+            </div>
+            <div>
+                <p class="text-2xl text-black opacity-50">Indulge your senses with the beauty and fragrance of our fresh
+                    flower shop. From
+                    classic roses to
+                    exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
         </div>
-        <div class="border relative"><img class="bottom-0 absolute" src="/assets/hero-flower.png" alt="flower img">
+        <div class=" relative order-1 md:order-2 "><img class="bottom-0 left-0 absolute w-full h-full"
+                src="assets/hero-flower.png" alt="flower img">
         </div>
 
     </section>
